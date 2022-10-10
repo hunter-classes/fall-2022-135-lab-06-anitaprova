@@ -16,4 +16,4 @@ tests: tests.o test-ascii.o caesar.o
 tests.o: tests.cpp doctest.h test-ascii.h caesar.h
 
 clean:
-	rm -f main.o tests.o test-ascii.o caesar.o
+	rm -f main tests main.o tests.o test-ascii.o caesar.o
