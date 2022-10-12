@@ -7,3 +7,7 @@ std::string test_ascii(std::string str){
 	}
 	return "";
 }
+
+int main(){
+	test_ascii("Cat :3 Dog");
+}
