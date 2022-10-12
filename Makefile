@@ -21,7 +21,7 @@ decrypt.o: decrypt.cpp decrypt.h
 tests: tests.o caesar.o vigenere.o decrypt.o
 	g++ -o tests tests.o caesar.o vigenere.o decrypt.o
 
-tests.o: tests.cpp doctest.h test-ascii.h caesar.h vigenere.h decrypt.h
+tests.o: tests.cpp doctest.h caesar.h vigenere.h decrypt.h
 
 clean:
 	rm -f main tests test-ascii main.o tests.o test-ascii.o caesar.o vigenere.o decrypt.o
