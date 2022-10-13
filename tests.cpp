@@ -7,11 +7,13 @@
 TEST_CASE("caesar"){
 	CHECK(encryptCaesar("Way to Go!", 5) == "Bfd yt Lt!");
 	CHECK(encryptCaesar("Hello, World!", 10) == "Rovvy, Gybvn!");
+	CHECK(encryptCaesar("abcdefghijklmnopqrstuvwxyz", 18) == "stuvwxyzabcdefghijklmnopqr");
 }
 
 TEST_CASE("vigenere"){
 	CHECK(encryptVigenere("Hello, World!", "cake") == "Jevpq, Wyvnd!");
 	CHECK(encryptVigenere("yee-haw partner", "cowboy") == "asa-iou ronubct");
+	CHECK(encryptVigenere("abcdefghijklmnopqrstuvwxyz", "christmas") == "citlwyshalrcufhbqjualdoqkz");
 }
 
 TEST_CASE("decrypt"){
