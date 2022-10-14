@@ -6,9 +6,9 @@
 
 TEST_CASE("shift character"){
 	CHECK(shiftChar('a', 1) ==  'b');
-	CHECK(shiftChar('a', 15) ==  'p');
+	CHECK(shiftChar('A', 15) ==  'P');
 	CHECK(shiftChar('z', 11) ==  'k');
-	CHECK(shiftChar('q', 8) ==  'y');
+	CHECK(shiftChar('Q', 8) ==  'Y');
 }
 
 TEST_CASE("caesar"){
